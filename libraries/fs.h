@@ -47,7 +47,6 @@ int fs_mkdir_all(const char *path);
 	#include <windows.h>
 	#include <direct.h>
 	#define __FS_MKDIR(dir) _mkdir(dir)
-	#define __FS_RESOLVEPATH()
 #else
 	#include <sys/syslimits.h>
 	#include <sys/stat.h>
